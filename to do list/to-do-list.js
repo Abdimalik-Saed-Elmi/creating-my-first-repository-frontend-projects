@@ -7,8 +7,10 @@ function Addtask(){
         console.log('Something went wrong..!')
     }
     else{
-        let lis = document.createElement("li")
-        lis.innerHTML = Inbutbox.value
+
+        let li = document.createElement('li')
+        li.innerHTML = Inbutbox.value;
         Listcontainer.appendChild(li);
+        
     }
 }

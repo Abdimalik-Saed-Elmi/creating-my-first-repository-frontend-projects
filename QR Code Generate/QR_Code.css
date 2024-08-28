@@ -4,10 +4,6 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
 }
-
-body{
-    
-}
 .parent{
     background: #262a2f;
     display: flex;
@@ -21,6 +17,7 @@ body{
     padding: 25px 35px;
     width: 400px;
     border-radius: 10px;
+    transition: all 2s;
 }
 
 .container p{
@@ -33,7 +30,7 @@ body{
     width: 100%;
     height: 50px;
     border: 1px solid #494eea;
-    outline: o;
+    outline: 0;
     padding: 10px;
     margin: 10px 0 20px;
     border-radius: 5px;
@@ -53,5 +50,49 @@ body{
 }
 
 .container button:hover{
-    background: linear-gradient(150deg, #494eea, #01331c);
+    background: linear-gradient(200deg, #494eea, #01331c);
+    color: #fff;
+}
+
+#Imgbox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#Imgbox img{
+    width: 200px;
+    padding: 10px;
+}
+
+#Imgbox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+    
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
 }

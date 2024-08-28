@@ -10,8 +10,11 @@
     <div class="parent">
         <div class="container">
             <p>Enter you text or URL</p>
-            <input type="text" placeholder="Text or URl">
-            <button>Generate QR Code</button>
+            <input type="text" placeholder="Text or URl" id="qrText">
+            <div id="Imgbox">
+                <img src="" id="qrImage">
+            </div>
+            <button  onclick="generateQR()">Generate QR Code</button>
         </div>
     </div>
 
