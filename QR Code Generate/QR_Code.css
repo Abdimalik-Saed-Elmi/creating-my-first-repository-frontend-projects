@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 92vh;
 
 }
 .container{
@@ -95,4 +95,16 @@
         transform: translateX(0);
     }
     
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 57, 57);
+    
+}
+
+.footer-center{
+    padding: 15px 0px;
 }
